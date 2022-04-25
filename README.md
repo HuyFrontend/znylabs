@@ -2,6 +2,11 @@
 
 ## Available Scripts
 
+## Install node modules
+
+### `yarn`
+
+
 In the project directory, you can run:
 
 ### `yarn start`
