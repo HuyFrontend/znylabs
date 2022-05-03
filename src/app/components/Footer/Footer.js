@@ -2,13 +2,35 @@
 import React from "react";
 import styled from "styled-components";
 const StyledFooter = styled.div`
+   display: block;
+   margin-top: 90px;
+   background: #1d1e1e;
+   text-align: center;
+   padding-top: 80px;
+   padding-bottom: 80px;
 `;
+const StyledFont = styled.div`
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+`;
+const StyledContainer = styled.div`
+   display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   `;
 const StyledSocialLink = styled.ul`
    color: red;
    display: flex;
    li {
      width: 50px;
    }
+`;
+const StyledText = styled.p`
+   color: #ffffff
 `;
 
 const Footer = ({  }) => {
@@ -20,7 +42,7 @@ const Footer = ({  }) => {
                <div className="container">
                   <div className="row d_flex">
                      <div className="col-md-8">
-                        <p>© 2022 All Rights Reserved. Design by  <a href="https://html.design/"> Free html Templates</a></p>
+                        <StyledText>© 2022 All Rights Reserved. Design by  <a href="https://znylabs.com/">znylabs </a></StyledText>
                      </div>
                      <div className="col-md-4">
                        <StyledSocialLink className="social_icon text_align_center">

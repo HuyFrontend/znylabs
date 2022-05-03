@@ -10,11 +10,6 @@ import { Header } from "./app/components/Header";
 import { Footer } from "./app/components/Footer";
 const AppContainer = styled.div``;
 const WeatherContainer = styled.div`
-  @media (min-width: 768px) {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
 `;
 const App = () => {
 
@@ -23,8 +18,8 @@ const App = () => {
     <AppContainer>
       <WeatherContainer>
         <Header />
-        <Footer />
       </WeatherContainer>
+      <Footer />
 
       <Loading on={weatherLoading} />
     </AppContainer>
