@@ -6,6 +6,8 @@ import { useSelector } from "react-redux";
 import {
   loading,
 } from "./app/data/weatherSlice";
+import { Header } from "./app/components/Header";
+import { Footer } from "./app/components/Footer";
 const AppContainer = styled.div``;
 const WeatherContainer = styled.div`
   @media (min-width: 768px) {
@@ -20,7 +22,8 @@ const App = () => {
   return (
     <AppContainer>
       <WeatherContainer>
-        <Weather />
+        <Header />
+        <Footer />
       </WeatherContainer>
 
       <Loading on={weatherLoading} />

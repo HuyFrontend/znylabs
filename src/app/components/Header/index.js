@@ -1,2 +1,2 @@
-import Loading from './Loading';
-export { Loading };
+import Header from './Header';
+export { Header };
